@@ -46,6 +46,7 @@ RUN ./autogen.sh && ./configure \
     --with-json \
     --with-gnutls  \
     --with-rsvg  \
+    --with-xft \
     --without-xwidgets \
     --without-toolkit-scroll-bars \
     --without-xaw3d \
