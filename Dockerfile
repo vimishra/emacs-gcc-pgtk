@@ -40,7 +40,7 @@ RUN update-ca-certificates \
 # Build
 ENV CC="gcc-10"
 RUN ./autogen.sh && ./configure \
-    --prefix "/usr/local" \
+    --prefix "/usr/" \
     --with-native-compilation \
     --with-pgtk \
     --with-json \
@@ -68,6 +68,7 @@ Maintainer: reichcv@gmail.com\n\
 Description: Emacs with native compilation and pure GTK\n\
     --with-native-compilation\n\
     --with-pgtk\n\
+    --with-xft\n\
     --with-json\n\
     --with-gnutls\n\
     --with-rsvg\n\
